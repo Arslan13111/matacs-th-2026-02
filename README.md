@@ -1,6 +1,6 @@
 # AI Proposal Triage Design
 
-**Candidate:** Anas M  
+**Candidate:** Muhammad Arslan Munawar 
 **Reference:** MATACS-TH-2026-02  
 **Time spent:** ~60 minutes  
 
@@ -18,4 +18,4 @@
 
 I used Claude (Anthropic) as an AI assistant during this exercise to help structure my thinking and draft sections of the write-up. I reviewed and edited all output for accuracy and completeness.
 
-**Where I disagreed with the AI:** The AI initially suggested using AI for *all* evaluation steps including mandatory pass/fail checks. I corrected this because mandatory criteria (licence, WSIB/insurance) are binary factual checks that are more reliably handled by deterministic rules with keyword matching — AI adds hallucination risk for no benefit here. I also insisted on explicitly flagging the prompt-injection attack embedded in Proposal C, which the AI did not initially identify as a distinct risk category.
+**Where I disagreed with the AI:** The AI initially suggested using AI for *all* evaluation steps including mandatory pass/fail checks. I corrected this because mandatory criteria (licence, WSIB/insurance) are binary factual checks that are more reliably handled by deterministic rules with keyword matching — AI adds hallucination risk for no benefit here. I also added a dedicated prompt-injection detection step that the AI had not included in its initial design. Since proposals come from external parties, adversarial content is a real-world risk that needs its own safeguard.
