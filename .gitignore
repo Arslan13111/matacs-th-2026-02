@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+ranking_prototype_output.json
+diagram/generate_diagram.py
